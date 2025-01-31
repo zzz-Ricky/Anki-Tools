@@ -2,7 +2,7 @@
 This is a repository to store small anki related scripts to automate tedious tasks
 ## Anki Word Type Updater
 
-This tool automatically fetches word types (parts of speech) for words in your Anki deck and updates the "Tags" field in each card using the Jisho API. This might be useful if you also use Yomichan to Automate Card Creation and need to update old cards.
+This tool automatically fetches word types (verb, noun, etc) for words in your Japanese Anki deck and updates the "Tags" field in each card using the Jisho API. This might be useful if you also use Yomichan to Automate Card Creation and need to update old cards.
 
 ### Requirements
 - Python 3.x
@@ -56,7 +56,7 @@ This tool automatically fetches word types (parts of speech) for words in your A
    - Update the Anki cards with the fetched word type in the chosen field.
 
 4. **Concurrency**:  
-   The tool uses multi-threading to process multiple notes simultaneously. You can adjust the `max_workers` parameter in the `ThreadPoolExecutor` for the number of simultaneous requests.
+   The tool uses multi-threading to process multiple notes simultaneously. You can adjust the `max_workers` parameter in the `ThreadPoolExecutor` for the number of simultaneous requests. Though, this will have diminishing returns as you will be limited by the speed of your internet and access to the Jisho API.
 
 ### Notes
 
